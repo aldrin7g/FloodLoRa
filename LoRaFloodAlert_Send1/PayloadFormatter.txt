@@ -1,0 +1,13 @@
+function Decoder(bytes, port) {
+  var data = bytes[1];
+  var data1 = bytes[0];
+  var Data_In_CM = data + " cm";
+  var Data_In_in = data1 + " inch";
+
+  return {
+    field1: data,
+    field2: data1,
+    DistCM: Data_In_CM,
+    DistInch: Data_In_in
+  };
+}
